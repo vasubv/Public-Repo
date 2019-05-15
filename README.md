@@ -1,9 +1,12 @@
-# Public-Repo
 This is a public repository
 
-- Jenkins will read this repository every 2 minutes (  Build Trigger - H/2 * * * * )
+1. Setting JENKINS Build Trigger in EST
+TZ=Canada/Eastern
 
-- # once every two hours at 45 minutes past the hour starting at 9:45 AM and finishing at 3:45 PM every weekday.
+2. In this setting Jenkins will read GIT, every 2 minutes 
+H/2 * * * * 
+
+3. In this setting, Jenkins will read GIT, once every 2H at 45 minutes past the H between 9:00 H & 16:00 H, between days 1 to 5
 45 9-16/2 * * 1-5
 
-- It will type the contents of this file in the Jenkins console ...
+4. It will type the contents of this file in the Jenkins console ...
